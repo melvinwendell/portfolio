@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #161616;
+  /* background-image: url("assets/img/foto-mago.jpg"); */
+  color: #ffffff;
+}
+
+/* 
+  # - acessa ids
+  . - acessa classes
+*/
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #ffffff;
+}
+
+a,
+button {
+  transition: all 300ms;
+}
+
+header {
+  background-color: #111111;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* seletor de filho direto > */
+header>a {
+  font-size: 32px;
+}
+
+header button {
+  background: none;
+  border: none;
+}
+
+header ul {
+  display: none;
+}
+
+header ul a {
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+header ul a:hover {
+  background-color: #389FAC;
+}
+
+main {
+  margin-top: 48px;
+  margin-bottom: 72px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+section {
+  margin-bottom: 72px;
+}
+
+section>h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+section p {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #d5d5d5;
+}
+
+
+/* Trabalhando com o seletor de id = # */
+#hero img {
+  display: none;
+}
+
+/* id da seção de projetos */
+#projetos p {
+  font-size: 16px;
+}
+
+article {
+  background-color: #212121;
+  border-radius: 32px;
+  padding: 14px;
+
+  /* remover - apenas para estudo */
+  margin-bottom: 28px;
+}
+
+article img {
+  border-radius: 24px;
+  width: 100%;
+}
+
+article h3 {
+  font-size: 24px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+article p {
+  margin-bottom: 24px;
+}
+
+article a {
+  background-color: #D9D9D9;
+  border-radius: 24px;
+  display: block;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+  color: #111111;
+}
+
+article a:hover {
+  background-color: #111111;
+  color: #D9D9D9;
+}
+
+section form {
+  border-radius: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  display: flex;
+  /* muda a direção dos elementos dentro da caixa flexível */
+  flex-direction: column;
+  gap: 16px;
+  /* remover essa propriedade */
+  background-color: #212121;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input,
+textarea {
+  border: 2px solid #3B3B3B;
+  border-radius: 24px;
+  padding: 16px;
+  background-color: #d5d5d5;
+}
+
+textarea {
+  height: 128px;
+  font-family: inherit;
+}
+
+button {
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  background-color: #389FAC;
+  font-size: 14px;
+  color: #d5d5d5;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #22626b;
+}
+
+footer {
+  background-color: #0C0C0C;
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 8px;
+}
+
+
+@media(min-width: 768px) {
+  header button {
+    display: none;
+  }
+
+  header ul {
+    display: flex;
+    gap: 16px;
+  }
+
+  #hero {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  #hero div {
+    max-width: 500px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h2 span {
+    color: #389FAC;
+  }
+
+  #hero img {
+    display: block;
+    height: 323px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+  }
+
+  #projetos ul {
+    display: flex;
+    gap: 16px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
